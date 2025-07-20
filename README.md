@@ -3,7 +3,7 @@
 
 🔗 **Ver online:** [www.atenciahomes.es](https://www.atenciahomes.es)
 
-**Versión online profesional del sitio web de Atencia Homes, actualmente alojada en GitHub Pages y conectada al dominio personalizado: [www.atenciahomes.es](https://www.atenciahomes.es).**
+**Versión online profesional del sitio web de AtenciaHomes, actualmente alojada en GitHub Pages y conectada al dominio personalizado: [www.atenciahomes.es](https://www.atenciahomes.es).**
 
 ## 🏡 ¿Qué es AtenciaHomes?
 
@@ -98,8 +98,8 @@ Por primera vez, puedo decir con orgullo:
 
 | Versión | Enlace                                                        |
 |---------|---------------------------------------------------------------|
-| v1.0    | [Atencia Homes 1.0](https://jesus323dev.github.io/AtenciaHomes.com/)         |
-| v2.0    | [Atencia Homes 2.0](https://jesus323dev.github.io/Atenciahomes2.0/)          |
-| v3.0    | [Atencia Homes 3.0](https://jesus323dev.github.io/Atencia-Homes-3.0/)        |
+| v1.0    | [AtenciaHomes 1.0](https://jesus323dev.github.io/AtenciaHomes.com/)         |
+| v2.0    | [AtenciaHomes 2.0](https://jesus323dev.github.io/Atenciahomes2.0/)          |
+| v3.0    | [AtenciaHomes 3.0](https://jesus323dev.github.io/Atencia-Homes-3.0/)        |
 
 ---
