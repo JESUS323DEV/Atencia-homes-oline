@@ -15,7 +15,7 @@ Atencia Homes actúa como el inquilino perfecto: garantiza el pago, cuida la pro
 
 ## 🏡 Descripción
 
-Esta es la **cuarta y versión más completa** del proyecto *Atencia Homes*.  
+Esta es la **cuarta y versión más completa** del proyecto *AtenciaHomes*.  
 Después de varias iteraciones, esta versión se ha desarrollado desde cero con **Bootstrap 5**, centrada en ofrecer una estructura limpia, moderna y totalmente responsive para móvil, tablet y escritorio.
 
 Esta es la versión **oficial online**, alojada en GitHub Pages con dominio propio.
