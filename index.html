@@ -2,308 +2,392 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Yisus">
-    <meta name="description" content="Página informativa">
-    <meta name="keywords" content="folleto, informativa, alquiler, habitaciones, piso">
-    <title>Atencia Homes - La mejor opción</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Yisus" />
+    <meta name="description" content="Página informativa" />
+    <meta name="keywords" content="folleto, informativa, alquiler, habitaciones, piso" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,600;1,9..40,600&family=Outfit:wght@300&display=swap"
-        rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet" />
 
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css3/estilos1.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
 
-    <script>
-        if (location.hostname === "atenciahomes.es") {
-            location.replace("https://www.atenciahomes.es" + location.pathname);
-        }
-    </script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
 
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css3/estilos1.css" />
 
+    <title>Atencia Homes - La mejor opción</title>
 </head>
 
 <body>
+    <!-- =================== HEADER =================== -->
 
-
-
-    <!-- AQUÍ EMPIEZA EL HEADER -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" role="navigation" aria-label="Menu Principal">
+    <header class="fondo-nav-menu" id="inicio">
+        <nav class="navbar navbar-expand-lg fixed-top py-4 navbar-ipad-pro" id="navbar" role="navigation"
+            aria-label="Menú principal">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="media/img/logo-sin-fondo.png" alt="Logo" style="width: 150px;" loading="lazy">
+                <a class="navbar-brand d-flex" href="#inicio">
+                    <img class="img-fluid logo-img mx-0 p-2 mx-lg-5" src="media/img/logo_sin_espacio_extra.png"
+                        alt="Logo de Atencia Homes" loading="lazy" />
                 </a>
-                <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarContenido">
-                    <ul class="navbar-nav ms-auto gap-md-5 gap-0">
-                        <li class="nav-item"><a class="nav-link text-white" href="#que-evitas">Qué evitas</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#quienes-somos">¿Quiénes somos?</a>
-                        </li>
 
-                        <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#como-funciona">Cómo funciona</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#propiedades">Propiedades</a></li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="bi bi-list fs-1 text-white"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav gap-2 gap-md-5 cont-gap mx-auto mx-md-1">
+                        <li class="nav-item"><a class="nav-link text-white" href="#que-evitas" aria-current="page">Qué
+                                evitas</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#como-funciona"
+                                aria-current="page">Cómo funciona</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#propiedades"
+                                aria-current="page">Propiedades</a></li>
                     </ul>
                 </div>
+
+                <a class="d-flex align-items-center gap-1 fs-0 fs-lg-5 border rounded btn-nav-fijo"
+                    href="https://wa.me/34642429362" target="_blank" aria-label="Contacto por WhatsApp">
+                    CONTACTO <i class="bi bi-whatsapp fs-0 fs-lg-4" aria-hidden="true"></i>
+                </a>
             </div>
         </nav>
-        <div class="min-vh-70">
-            <div class="container text-white mt-5">
-                <h3 class="fs-5 mb-5 text-warning">DESCUBRE CÓMO ALQUILAR TU VIVIENDA MAXIMIZANDO
-                    TUS INGRESOS</h3>
-                <h1 class="mb-5">Brindamos soluciones a propietarios que no desean preocuparse por su alquiler.</h1>
-                <h3 class="fs-5 mb-5 text-warning">Somos tu inquilino perfecto.</h3>
-                <a class="text-white btn btn-primary btn-lg p-3 fs-3" href="https://wa.me/+34642429362" target="_blank"
-                    aria-label="Contactar vía WhatsApp" rel="noopener">CONTÁCTENOS</a>
+        <div class="barra-color-azul d-none d-lg-block"></div>
+
+
+        <div class="container">
+            <div class="d-flex flex-column align-items-center align-items-md-end">
+                <h2 class="fs-2 my-2 my-md-5 color-text1 w-50 cont-w-100 text-center text-lg-start cont-center">
+                    DESCUBRE CÓMO ALQUILAR TU VIVIENDA MAXIMIZANDO TUS INGRESOS.
+                </h2>
+
+                <h1 class="my-5 font-size-h1 text-white text-center w-100">
+                    Brindamos soluciones a propietarios que no desean preocuparse por su alquiler.
+                </h1>
+
+                <div class="w-100 text-center text-lg-start cont-center">
+                    <a class="btn-lg btn-principal border" href="#quienes-somos" role="button">¿Quiénes somos?</a>
+                    <p class="fs-3 color-text1 mt-4 mt-md-5">Somos tu inquilino perfecto.</p>
+                </div>
             </div>
         </div>
     </header>
-    <!-- AQUÍ TERMINA EL HEADER -->
+    <!-- =================== FIN HEADER =================== -->
 
-    <!-- AQUÍ EMPIEZA EL MAIN -->
+    <!-- =================== INICIO MAIN =================== -->
+
     <main>
-        <!-- 1º PARTE MAIN - QUE EVITAS -->
-        <section id="que-evitas">
+
+        <!-- =================== SECCIÓN 1 =================== -->
+        <section id="que-evitas" role="region" aria-labelledby="titulo-que-evitas">
+            <div class="fondo-tittle my-4 my-md-5 w-75 mx-auto cont-w-100">
+                <h3 class="text-warning p-2 p-md-3 text-center text-lg-start border w-100 fs-2">Adiós a los problemas.
+                </h3>
+            </div>
             <div class="container">
-                <h2 class="cont-tittle text-primary">¿Has pasado por alguna de estas situaciones?</h2>
-                <h3 class="p-3 fs-2 mb-5 text-warning" style="background-image: url(media/img/fondo-anochecer.jpg);">
-                    Adiós a los problemas.</h3>
-                <div class="row align-items-center g-4">
-                    <div class="col-12 col-lg-6">
-                        <img src="media/img/habitacion-superior.jpeg" alt="habitación-superior" class="img-fluid"
-                            loading="lazy">
+                <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between">
+                    <div class="d-flex flex-fill">
+                        <img class="img-fluid img-seccion1" src="media/img/img-section-1-llaves.png"
+                            alt="Llaves de una vivienda" loading="lazy" />
                     </div>
-                    <div class="col-12 col-lg-6">
-                        <ul class="list-main fs-4">
-                            <li>Mis inquilinos dejaron de pagarme.</li>
-                            <li>Retrasos constantes para recibir mi alquiler.</li>
-                            <li>Miedo a que okupen mi casa.</li>
-                            <li>Destrozos en mi vivienda.</li>
-                            <li>Me siento desprotegido como propietario.</li>
-                            <li>Se ha vuelto a romper la lavadora, el frigorífico o el lavavajillas.</li>
-                            <li>Mi inquilino me llama cada dos semanas sin motivo importante.</li>
-                            <li>Quejas constantes de mis vecinos.</li>
+                    <div class="d-flex flex-column">
+                        <div class="sub-tittle mb-3">
+                            <h3 class="text-center fs-3">¿Has pasado por alguna de estas situaciones?</h3>
+                            <div class="barra-color-yellow"></div>
+                        </div>
+                        <!-- =================== LISTA-SECCIÓN 1 =================== -->
+
+                        <ul class="list-unstyled list-problemas">
+                            <li class="d-flex flex-row mb-3 gap-2">
+                                <i class="bi bi-exclamation-circle-fill cont-color-icon" aria-hidden="true"></i>
+                                <span>Mis inquilinos dejaron de pagarme.</span>
+                            </li>
+                            <li class="d-flex flex-row mb-3 gap-2">
+                                <i class="bi bi-clock-fill cont-color-icon" aria-hidden="true"></i>
+                                <span>Retrasos constantes para recibir mi alquiler.</span>
+                            </li>
+                            <li class="d-flex flex-row mb-3 gap-2">
+                                <i class="bi bi-house-exclamation-fill cont-color-icon" aria-hidden="true"></i>
+                                <span>Miedo a que okupen mi casa.</span>
+                            </li>
+                            <li class="d-flex flex-row mb-3 gap-2">
+                                <i class="bi bi-hammer cont-color-icon" aria-hidden="true"></i>
+                                <span>Destrozos en mi vivienda.</span>
+                            </li>
+                            <li class="d-flex flex-row mb-3 gap-2">
+                                <i class="bi bi-emoji-astonished-fill cont-color-icon" aria-hidden="true"></i>
+                                <span>Me siento desprotegido como propietario.</span>
+                            </li>
+                            <li class="d-flex flex-row mb-3 gap-2">
+                                <i class="bi bi-exclamation-triangle-fill cont-color-icon" aria-hidden="true"></i>
+                                <span>Se ha vuelto a romper la lavadora, el frigorífico o el lavavajillas.</span>
+                            </li>
+                            <li class="d-flex flex-row mb-3 gap-2">
+                                <i class="bi bi-telephone-inbound-fill cont-color-icon" aria-hidden="true"></i>
+                                <span>Mi inquilino me llama cada dos semanas sin motivo importante.</span>
+                            </li>
+                            <li class="d-flex flex-row mb-3 gap-2">
+                                <i class="bi bi-volume-up-fill cont-color-icon" aria-hidden="true"></i>
+                                <span>Quejas constantes de mis vecinos.</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- FIN 1º PARTE MAIN - QUE EVITAS -->
 
-        <hr class="mx-5 my-5">
-
-        <!-- 2º PARTE MAIN - QUIENES SOMOS -->
-        <section id="quienes-somos">
-            <div class="container mt-5">
-                <h2 class="cont-tittle text-primary">Sobre Nosotros</h2>
-                <div class="row g-4">
-                    <div class="col-12 col-lg-6">
-                        <h3 class="fs-2 p-3 text-warning" style="background-image: url(media/img/fondo-anochecer.jpg);">
-                            ¿Quiénes somos?</h3>
-                        <p class="fs-5 p-3">Somos una empresa que ofrece una propuesta exclusiva para propietarios que
-                            desean alquilar sus propiedades sin intermediarios, sin comisiones y sin riesgos. No tendrás
-                            que preocuparte por nada relacionado con la gestión. Nos encargamos de mejorar tu inmueble
-                            mediante diversas acciones y reformas para maximizar su valor en el mercado.</p>
-                        <h3 class="fs-2 my-4 p-3 text-warning"
-                            style="background-image: url(media/img/fondo-anochecer.jpg);">¿Qué hacemos?</h3>
-                        <p class="fs-5 p-3">Nos encargamos del alquiler de tu propiedad, convirtiéndonos en tu inquilino
-                            ideal. Garantizamos el pago puntual de tu alquiler y nos ocupamos del mantenimiento a lo
-                            largo de la duración del contrato.</p>
+        <!-- =================== SECCIÓN 2 =================== -->
+        <section id="como-funciona" role="region" aria-labelledby="titulo-como-funciona">
+            <div class="fondo-tittle my-4 my-md-5 w-75 mx-auto cont-w-100">
+                <h2 class="text-warning p-2 p-md-3 mx-5 text-center text-lg-start fs-1">Cómo Funciona</h2>
+            </div>
+            <div class="container my-5">
+                <div class="d-flex flex-column flex-lg-row justify-content-between">
+                    <!-- Tarjeta 1 -->
+                    <div class="card cont-card shadow-sm">
+                        <img class="img-fluid card-img-top h-img" src="media/img/card-img-1.jpg"
+                            alt="Alquilamos tu vivienda" loading="lazy" />
+                        <div class="card-body">
+                            <h5 class="card-title tittle-card">Alquilamos tu vivienda por ti</h5>
+                            <div class="barra-color-card"></div>
+                            <p class="card-text text-center">
+                                Buscamos y filtramos inquilinos confiables. Nos encargamos de los trámites y
+                                garantizamos que tu propiedad esté en buenas manos.
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-6 d-flex">
-                        <img src="media/img/terraza3.png" class="img-fluid align-self-stretch" alt="terraza3"
-                            style="object-fit: cover;" loading="lazy">
-
+                    <!-- Tarjeta 2 -->
+                    <div class="card cont-card shadow-sm">
+                        <img class="img-fluid card-img-top" src="media/img/card-img-2.jpg" alt="Pagamos tu alquiler"
+                            loading="lazy" />
+                        <div class="card-body">
+                            <h5 class="card-title tittle-card">Pagamos tu alquiler cada mes</h5>
+                            <div class="barra-color-card"></div>
+                            <p class="card-text text-center">
+                                Sin preocupaciones ni riesgos: nosotros nos hacemos cargo del alquiler y te aseguramos
+                                un ingreso estable mes a mes, sin retrasos ni excusas.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 3 -->
+                    <div class="card cont-card shadow-sm">
+                        <img class="img-fluid card-img-top" src="media/img/card-img-3.jpg" alt="Gestionamos tu vivienda"
+                            loading="lazy" />
+                        <div class="card-body">
+                            <h5 class="card-title tittle-card">Gestionamos tu vivienda</h5>
+                            <div class="barra-color-card"></div>
+                            <p class="card-text text-center">
+                                Nos ocupamos de todo: gestionamos contratos, incidencias, mantenimiento y papeleo.
+                                Fácil, rápido y seguro. Tú solo ves resultados.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 4 -->
+                    <div class="card cont-card shadow-sm border">
+                        <img src="media/img/card-img-4.jpg" alt="Comodidad" loading="lazy"
+                            class="img-fluid card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title tittle-card">Tranquilidad para propietarios</h5>
+                            <div class="barra-color-card"></div>
+                            <p class="card-text text-center">
+                                Atención personalizada. Te ofrecemos servicios de administración profesional adaptados a
+                                tus necesidades. Cuidamos cada detalle para que tú no tengas que preocuparte por nada.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- FIN 2º PARTE MAIN - QUIENES SOMOS -->
 
-        <hr class="mx-5 my-5">
+        <!-- =================== SECCIÓN 3 =================== -->
+        <section id="quienes-somos" role="region" aria-labelledby="titulo-quienes-somos">
+            <div class="fondo-tittle my-4 my-md-5 w-75 mx-auto cont-w-100">
+                <h2 class="text-warning p-2 p-md-3 mx-5 text-center text-lg-start fs-1" id="titulo-quienes-somos">Sobre
+                    Nosotros</h2>
+            </div>
 
-        <!-- 3º PARTE MAIN - CONTACTO -->
-        <h2 class="cont-tittle text-primary">Contáctenos</h2>
-        <section id="contacto">
             <div class="container">
-                <div class="row g-4 align-items-stretch">
-                    <div class="col-12 col-lg-6 d-flex justify-content-center">
-                        <div class="card shadow rounded h-100 p-4"
-                            style="width: 40rem; background-image: url(media/img/fondo-anochecer.jpg);">
-                            <h3 class="card-title fs-1 mb-4 text-center text-primary">Contacto</h3>
-                            <h4 class="card-text fs-3 mb-4 text-warning text-center">¿Quieres más información?</h4>
-                            <p class="card-text fs-5 text-white text-center">¡Ponte en contacto con nosotros para
-                                recibir más
-                                información! Con mucho gusto te responderemos lo más rápidamente posible.</p>
-                            <a href="https://wa.me/34642429362" target="_blank" aria-label="Contactar vía WhatsApp"
-                                rel="noopener">
-                                <img src="media/img/whatssap.jpg" class="img-fluid d-block mx-auto my-5 rounded-circle"
-                                    style="width: 150px; height: 150px; object-fit: cover;" alt="WhatsApp"
-                                    loading="lazy">
-                            </a>
-                        </div>
+                <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+                    <div class="d-flex flex-column">
+                        <h4 class="d-flex align-items-center gap-1 sub-tittle mx-auto mx-lg-0">
+                            <i class="bi bi-question-circle-fill fs-1 cont-color-icon"></i>¿Quiénes somos?
+                        </h4>
+                        <div class="barra-quienes-somos mb-3"></div>
+
+                        <p class="cont-texto-section3">
+                            En Atencia Homes llevamos más de 5 años dedicados al mercado inmobiliario residencial y
+                            comercial de alta gama. Nuestro equipo trabaja con un compromiso firme en ofrecer un
+                            servicio exclusivo y de calidad en Barcelona y otras zonas de España. Cada operación refleja
+                            nuestros valores: competencia, exclusividad y pasión por lo que hacemos.
+                        </p>
+
+                        <h4 class="d-flex align-items-center gap-1 sub-tittle mx-auto mx-lg-0">
+                            <i class="bi bi-gear-fill fs-1 cont-color-icon"></i>¿Qué hacemos?
+                        </h4>
+                        <div class="barra-quienes-somos mb-3"></div>
+
+                        <p class="cont-texto-section3">
+                            Garantizamos una gestión integral en la que tu propiedad se administra de forma eficiente,
+                            segura y sin complicaciones. Garantizamos un ingreso mensual estable, cuidamos del buen uso
+                            del inmueble y realizamos el mantenimiento necesario durante todo el periodo de
+                            arrendamiento. Así, tu inversión sigue generando valor sin que tengas que ocuparte del día a
+                            día.
+                        </p>
                     </div>
-                    <div class="col-12 col-lg-6 d-flex justify-content-center">
-                        <div class="card shadow rounded h-100 p-4"
-                            style="width: 40rem; background-image: url(media/img/fondo-anochecer.jpg);">
-                            <h2 class="card-title fs-1 mb-4 text-center text-md-start text-primary">Ventajas sobre el
-                                alquiler tradicional</h2>
-                            <ul class="list-main fs-4 text-warning">
-                                <li>Acceso a tu vivienda cuando lo desees</li>
-                                <li>Garantía de pago</li>
-                                <li>No okupación</li>
-                                <li>Revalorización del inmueble</li>
-                                <li>Ingresos totalmente pasivos para el propietario</li>
-                            </ul>
-                        </div>
+
+                    <img class="img-fluid img-section3 border rounded mt-0 mt-lg-5"
+                        src="media/img/img-quienes-somos.jpg" alt="¿Quiénes somos?" loading="lazy" />
+                </div>
+            </div>
+
+            <!-- SECCIÓN 3-1 -->
+            <div class="container mt-5 border shadow-lg">
+                <h4 class="fs-3 text-center sub-tittle">¿Qué Ofrecemos?</h4>
+                <div class="barra-diferencia mb-5"></div>
+
+                <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between cont-pro">
+                    <div class="w-25 cont-w-100 mb-5 mb-lg-0">
+                        <p class="d-flex flex-column text-center">
+                            <i class="bi bi-award-fill text-center size-icon" aria-hidden="true"></i>
+                            <span class="fs-4 fw-bold">Experiencia</span>
+                            Llevamos 5 años en el sector y más de 120 habitaciones.
+                        </p>
+                    </div>
+
+                    <div class="w-25 cont-w-100 mb-5 mb-lg-0">
+                        <p class="d-flex flex-column text-center">
+                            <i class="bi bi-bookmark-star-fill text-center size-icon" aria-hidden="true"></i>
+                            <span class="fs-4 fw-bold">Garantía</span>
+                            Más de 25 propietarios nos han confiado sus inmuebles.
+                        </p>
+                    </div>
+
+                    <div class="w-25 cont-w-100 mb-5 mb-lg-0">
+                        <p class="d-flex flex-column text-center">
+                            <i class="bi bi-person-fill-add text-center size-icon" aria-hidden="true"></i>
+                            <span class="fs-4 fw-bold">Servicios</span>
+                            Tenemos personal para dar un servicio total: reforma, limpieza, mantenimiento, gestión, etc.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- FIN 3º PARTE MAIN - CONTACTO -->
-
-        <hr class="mx-5 my-5">
-
-        <!-- COMO FUNCIONA -->
-        <h2 class="cont-tittle text-primary">Cómo Funciona</h2>
-        <section id="como-funciona"
-            style="background-image: url(media/img/fondo-anochecer.jpg);background-size: cover;">
-            <div class="row gap-5 d-flex align-items-center justify-content-around g-4 p-3 text-center">
-                <div class="col-12 col-lg-2">
-                    <h3 class="fs-4 text-primary">Alquilamos tu vivienda</h3>
-                    <p class="text-warning">Nos encargamos de todo el proceso de alquiler.</p>
-                </div>
-                <div class="col-12 col-lg-2">
-                    <h3 class="fs-4 text-primary">Pagamos tu alquiler</h3>
-                    <p class="text-warning">Tú te despreocupas de las gestiones.</p>
-                </div>
-                <div class="col-12 col-lg-2">
-                    <h3 class="fs-4 text-primary">Gestionamos tu vivienda</h3>
-                    <p class="text-warning">Nosotros nos encargamos de encontrar inquilinos.</p>
-                </div>
-                <div class="col-12 col-lg-2">
-                    <h3 class="fs-4 text-primary">Alquiler sin estrés</h3>
-                    <p class="text-warning">Te ayudamos a alquilar tu vivienda de manera ágil y sencilla.</p>
-                </div>
-            </div>
-        </section>
-        <!-- FIN COMO FUNCIONA -->
-
-        <hr class="mx-5 my-5">
-
-        <!-- PROPIEDADES -->
-        <section id="propiedades">
-            <h2 class="cont-tittle text-primary">Descubre nuestras propiedades</h2>
-            <div class="container mt-5 mb-5">
-                <div class="row g-4">
-                    <div class="col-12 col-lg-4">
-                        <img src="media/img/habitacion1.jpeg" class="img-fluid" alt="habitación1">
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <img src="media/img/habitacion2.jpeg" class="img-fluid" alt="habitación2">
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <img src="media/img/habitacion3.jpeg" class="img-fluid" alt="habitación3">
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <img src="media/img/habitacion4.jpeg" class="img-fluid" alt="habitación4">
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <img src="media/img/habitacion5.jpeg" class="img-fluid" alt="habitación5">
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <img src="media/img/habitacion-superior.jpeg" class="img-fluid" alt="habitación-superior">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- FIN PROPIEDADES -->
     </main>
-    <!-- FIN MAIN -->
 
-    <!-- AQUÍ EMPIEZA EL FOOTER -->
-    <footer style="background-image: url('media/img/fondo-anochecer.jpg'); background-size: cover;">
+    <!-- =================== FIN-MAIN =================== -->
+
+    <!-- =================== GALERÍA DE IMÁGENES =================== -->
+    <section id="propiedades" role="region" aria-labelledby="titulo-propiedades">
+        <div class="fondo-tittle my-4 my-md-5 w-75 mx-auto cont-w-100">
+            <h3 class="text-warning p-2 p-md-3 mx-5 text-center text-lg-start fs-3" id="titulo-propiedades">Descubre
+                nuestras propiedades:</h3>
+        </div>
+
         <div class="container">
-            <div class="row align-items-center justify-content-center text-center text-lg-start g-4 text-primary">
-                <div class="col-12 col-lg-3">
-                    <img src="media/img/logo-sin-fondo.png" alt="Logo Atencia Homes" class="img-fluid"
-                        style="max-width: 110px;">
+            <div class="row mb-0 mb-lg-3">
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <img class="img-fluid" src="media/img/habitacion-superior.jpeg" alt="Habitación Galería 1"
+                        loading="lazy">
                 </div>
-                <div class="col-12 col-lg-3">
-                    <p>Teléfono: <a href="tel:34642429362" class="text-warning">+34 642 42 93 62</a></p>
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <img class="img-fluid" src="media/img/habitacion1.jpeg" alt="Habitación Galería 2" loading="lazy">
                 </div>
-                <div class="col-12 col-lg-3">
-                    <p>Correo&nbsp;electrónico:<a href="mailto:Atenciahomes@gmail.com"
-                            class="text-warning">Atenciahomes@gmail.com</a></p>
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <img class="img-fluid" src="media/img/habitacion2.jpeg" alt="Habitación Galería 3" loading="lazy">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <img class="img-fluid" src="media/img/habitacion3.jpeg" alt="Habitación Galería 4" loading="lazy">
+                </div>
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <img class="img-fluid" src="media/img/habitacion4.jpeg" alt="Habitación Galería 5" loading="lazy">
+                </div>
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <img class="img-fluid" src="media/img/habitacion5.jpeg" alt="Habitación Galería 6" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- =================== FOOTER =================== -->
+    <footer>
+        <div class="container-fluid fondo-foot">
+            <div class="d-flex flex-column flex-lg-row justify-content-around align-items-center mt-0 mt-lg-5">
+                <div class="text-center text-warning mt-4 mt-lg-0">
+                    <img class="img-fluid mb-2 logo-foot" src="media/img/logo_sin_espacio_extra.png" alt="Logo Footer"
+                        loading="lazy">
+                    <p>La Mejor Opción</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-warning mb-2 p-2">Correo electrónico:
+                        <a href="mailto:atenciahomes@gmail.com" class="text-white nav-link">atenciahomes@gmail.com</a>
+                    </p>
+                    <p class="text-warning mb-2 p-2">Teléfono:
+                        <a href="tel:+34642429362" class="text-white nav-link">+34 642 42 93 62</a>
+                    </p>
+                </div>
+                <div class="text-center text-warning small mt-0 mt-lg-4 d-flex flex-column">
+                    <i>© 2025 Atencia Homes<br>Todos los derechos reservados.</i>
+                    <a href="#" class="text-warning" data-bs-toggle="modal" data-bs-target="#modalAvisoLegal">Aviso
+                        legal</a>
                 </div>
             </div>
-            <div class="text-center mt-4 text-warning small">
-                © 2025 Atencia Homes | Todos los derechos reservados. <br>
-                <a href="#aviso-legal" class="text-warning">Aviso legal</a>
-            </div>
-        </div> <!-- Cierre container -->
+        </div>
     </footer>
-    <!-- FIN FOOTER -->
 
+    <!-- =================== MODAL AVISO LEGAL =================== -->
+    <div class="modal fade" id="modalAvisoLegal" tabindex="-1" aria-labelledby="modalAvisoLegalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-warning" id="modalAvisoLegalLabel">Aviso Legal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Esta página web es propiedad de Atencia Homes. Su finalidad es proporcionar información sobre
+                        nuestros servicios de gestión de viviendas y alquiler de propiedades.</p>
+                    <p>Todos los contenidos de esta web, incluyendo imágenes, textos, logotipos y marcas, son propiedad
+                        de Atencia Homes o de sus respectivos titulares, y están protegidos por derechos de propiedad
+                        intelectual.</p>
+                    <p>No nos hacemos responsables del mal uso que terceros puedan hacer del contenido de esta web, ni
+                        de posibles errores técnicos que impidan su funcionamiento correcto.</p>
+                    <p>Este sitio no recoge datos personales a través de formularios. Para cualquier duda, puede
+                        contactar con nosotros en <a href="mailto:atenciahomes@gmail.com">atenciahomes@gmail.com</a>.
+                    </p>
+                    <p>La navegación en esta web implica la aceptación de este aviso legal. Nos reservamos el derecho de
+                        modificar el contenido en cualquier momento.</p>
+                    <p>Legislación aplicable: Leyes de España. Jurisdicción: Juzgados de Barcelona.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <a href="#top" id="scrollToTop" aria-label="Volver al inicio">↑</a>
-
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <!-- =================== SCRIPTS =================== -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
     <script>
-        const scrollBtn = document.getElementById('scrollToTop');
-
+        const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                scrollBtn.style.display = 'block';
-            } else {
-                scrollBtn.style.display = 'none';
-            }
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
         });
     </script>
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Yisus">
-    <meta name="description" content="Página informativa">
-    <meta name="keywords" content="folleto, informativa, alquiler, habitaciones, piso">
-    <title>Atencia Homes - La mejor opción</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,600;1,9..40,600&family=Outfit:wght@300&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css3/estilos1.css">
-
-
-</head>
-
-<body>
