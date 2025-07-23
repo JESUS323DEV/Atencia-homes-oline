@@ -60,3 +60,66 @@ Este sitio es la versión **final y profesional** del proyecto Atencia Homes, co
 
 ## 📁 Estructura del proyecto
 
+/AtenciaHomes-final
+│
+├── index.html
+├── css3/
+│ └── estilos-1.css
+├── media/
+│ └── img/ (imágenes del sitio)
+├── bootstrap/
+│ └── Archivos de Bootstrap opcionales
+├── CNAME
+└── README.md
+
+
+---
+
+## ✅ Checklist de mejoras aplicadas
+
+- [x] Limpieza y optimización de CSS.
+- [x] Navegación accesible (`tab`, `:focus`, ARIA...).
+- [x] Optimización de imágenes (`loading=\"lazy\"`, tamaños correctos).
+- [x] Estructura HTML semántica.
+- [x] Footer completo con contacto y aviso legal en modal.
+- [x] Animación de navbar al hacer scroll.
+
+---
+
+## 🧠 Nota personal del autor
+
+Este proyecto representa la evolución de mis habilidades como desarrollador web.  
+He pasado de simples maquetas estáticas a crear un sitio profesional con estructura sólida, accesibilidad y responsive real.
+
+> 🔹 Por fin, una web con apariencia seria, profesional y pulida.  
+> 🔹 ¡Lista para captar propietarios reales y transmitir confianza!
+
+---
+
+## 📌 Enlace a versiones anteriores
+
+| Versión | Enlace                                                                 |
+|---------|------------------------------------------------------------------------|
+| v1.0    | [AtenciaHomes 1.0](https://jesus323dev.github.io/AtenciaHomes.com/)   |
+| v2.0    | [AtenciaHomes 2.0](https://jesus323dev.github.io/Atenciahomes2.0/)    |
+| v3.0    | [AtenciaHomes 3.0](https://jesus323dev.github.io/Atencia-Homes-3.0/)  |
+
+---
+
+## 🔮 Próximos pasos (opcional)
+
+- [ ] Añadir sección de contacto funcional con formulario.
+- [ ] Optimización SEO completa.
+- [ ] Mejora WAVE/lighthouse para accesibilidad avanzada.
+- [ ] Integrar animaciones suaves con JavaScript o ScrollReveal.
+
+---
+
+## 👤 Autor
+
+Desarrollado por **Jesús**  
+🔗 [https://www.atenciahomes.es](https://www.atenciahomes.es)
+
+---
+
+
