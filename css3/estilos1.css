@@ -13,6 +13,9 @@ body {
     padding: 0 !important;
 }
 
+/* =====================
+   Tipografías globales
+   ===================== */
 h1,
 h2,
 h3,
@@ -24,17 +27,11 @@ h5 {
     font-weight: bold !important;
 }
 
-
-
-
-p,ul,li {
-
+p, ul, li {
     font-family: "STIX Two Text", serif !important;
     font-optical-sizing: auto !important;
     font-style: normal !important;
 }
-    
-
 
 /* =====================
    Logo Principal
@@ -44,10 +41,8 @@ p,ul,li {
 }
 
 .logo-foot {
-
     max-width: 200px;
 }
-
 
 /* =====================
    Navbar Estilos
@@ -60,13 +55,17 @@ p,ul,li {
 .navbar-brand {
     margin: 0 !important;
     padding: 0 !important;
-
 }
 
 .navbar {
     background-color: transparent;
     transition: all 0.3s ease;
     color: white;
+}
+
+.navbar a {
+    color: white !important;
+    transition: color 0.1s ease;
 }
 
 /* =====================
@@ -78,20 +77,12 @@ p,ul,li {
     color: black !important;
 }
 
-
-
-.navbar a {
-    color: white !important;
-    transition: color 0.1s ease;
-}
-
 .navbar.scrolled a {
     color: white !important;
 }
 
-
 /* =====================
-   Barra de color decorativa 
+   Barra de color decorativa
    ===================== */
 .barra-color-azul {
     width: 60%;
@@ -102,7 +93,6 @@ p,ul,li {
 }
 
 .barra-color-yellow {
-
     width: 90%;
     height: 5px;
     margin: auto;
@@ -111,7 +101,6 @@ p,ul,li {
 }
 
 .barra-color-card {
-
     width: 50%;
     height: 5px;
     background-color: #ffc800;
@@ -119,9 +108,7 @@ p,ul,li {
     margin-bottom: 1rem;
 }
 
-
 .barra-quienes-somos {
-
     width: 26%;
     height: 5px;
     background-color: #ffc800;
@@ -129,16 +116,11 @@ p,ul,li {
 }
 
 .barra-diferencia {
-
     width: 40%;
     height: 5px;
     background-color: #ffc800;
     margin: auto;
-
 }
-
-
-
 
 /* =====================
    Fondo principal del header
@@ -152,13 +134,10 @@ p,ul,li {
     padding-bottom: 80px;
 }
 
-
 /* =====================
    Sección 1
    ===================== */
-
 .img-seccion1 {
-
     max-width: 100%;
     width: 550px;
     margin-top: 12%;
@@ -168,37 +147,28 @@ p,ul,li {
 /* =====================
    Sección 2
    ===================== */
-
 .cont-card {
-
     max-width: 100%;
     width: 20%;
     height: auto;
 }
 
 .h-img {
-
     height: 38%;
 }
-
 
 /* =====================
    Sección 3
    ===================== */
-
 .cont-texto-section3 {
-
     max-width: 100%;
     max-width: 75%;
     margin-left: 8%;
 }
 
 .img-section3 {
-
     max-width: 500px;
-
 }
-
 
 /* =====================
    Botón principal CTA
@@ -213,13 +183,9 @@ p,ul,li {
     cursor: pointer;
     font-size: 1.5rem;
     padding: 1rem !important;
-
 }
 
-
-
 .btn-nav-fijo {
-
     background-color: #154360;
     color: white;
     font-weight: bold;
@@ -229,7 +195,6 @@ p,ul,li {
     cursor: pointer;
     font-size: 1.5rem;
     padding: 0.5rem !important;
-
 }
 
 .btn-principal:focus,
@@ -240,21 +205,12 @@ p,ul,li {
     box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
 }
 
-
-
-
-
-
-
 /* =====================
    Lista de problemas
    ===================== */
 .list-problemas {
     font-size: 1.2rem;
 }
-
-
-
 
 /* =====================
    Título secciones fondo
@@ -264,23 +220,17 @@ p,ul,li {
     background-size: cover;
 }
 
-
-
 /* =====================
    Colores Iconos-Main
    ===================== */
-
 .cont-color-icon {
-
     color: #154360;
 }
 
 .size-icon {
-
     font-size: 4rem;
-    color: #154360
+    color: #154360;
 }
-
 
 /* =====================
    Subtítulos decorativos
@@ -292,15 +242,11 @@ p,ul,li {
 }
 
 .tittle-card {
-
     padding: 0.3rem;
     color: #154360;
     font-size: 1.3rem;
     text-align: center;
 }
-
-
-
 
 /* =====================
    Colores de texto principales
@@ -316,9 +262,7 @@ p,ul,li {
 /* =====================
    FOOTER
    ===================== */
-
 .fondo-foot {
-
     background-image: url(../media/img/nav_background_color.png);
 }
 
@@ -327,21 +271,7 @@ p,ul,li {
    ===================== */
 
 /* XS (≤575.98px): móviles “standard” */
-
-/* ========================================== */
 @media (max-width: 575.98px) {
-    body::before {
-        content: "XS activo";
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: crimson;
-        color: white;
-        padding: 5px;
-        z-index: 9999;
-    }
-
-    /* ========================================== */
 
     #navbarSupportedContent {
         background-color: rgb(27, 74, 131);
@@ -357,15 +287,12 @@ p,ul,li {
         z-index: 9999;
     }
 
-
     .navbar-toggler {
         margin-right: auto;
         margin-left: 0;
-
     }
 
     .navbar-toggler:hover {
-
         color: white;
     }
 
@@ -392,14 +319,11 @@ p,ul,li {
         font-size: 1.2rem;
     }
 
- 
-
     .list-problemas li {
         padding: 0 !important;
     }
 
     .img-seccion1 {
-
         max-width: 100%;
         width: 600px;
         height: auto !important;
@@ -407,7 +331,6 @@ p,ul,li {
     }
 
     .barra-color-yellow {
-
         width: 100%;
         height: 5px;
         background-color: #ffc800;
@@ -418,7 +341,6 @@ p,ul,li {
         height: 5px;
         background-color: #154360;
         margin-bottom: 1.5rem;
-
     }
 
     .btn-nav-fijo {
@@ -431,15 +353,9 @@ p,ul,li {
         cursor: pointer;
         padding: 0.3rem;
         font-size: 0.9rem !important;
-
-
-
-
     }
 
-
     .cont-card {
-
         max-width: 100%;
         width: 100%;
         height: auto;
@@ -447,13 +363,10 @@ p,ul,li {
     }
 
     .img-section3 {
-
         max-width: 300px;
-
     }
 
     .barra-quienes-somos {
-
         width: 60%;
         height: 5px;
         background-color: #ffc800;
@@ -461,47 +374,20 @@ p,ul,li {
     }
 
     .cont-texto-section3 {
-
         max-width: 100%;
         max-width: 100%;
         margin-left: 0 !important;
         padding: 1.5rem;
         text-align: center;
-
     }
 
     .logo-foot {
-
         max-width: 150px;
     }
-
-
-
-
 }
 
-
-/* ========================================== */
 /* SM (576px–767.98px): móviles y phablets horizontales */
-/* ========================================== */
-
-
 @media (min-width: 576px) and (max-width: 767.98px) {
-    /* ========================================== */
-
-    body::before {
-        content: "SM activo";
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: green;
-        color: white;
-        padding: 5px;
-        z-index: 9999;
-    }
-
-    /* ========================================== */
-
 
     #navbarSupportedContent {
         background-color: rgb(27, 74, 131);
@@ -541,9 +427,7 @@ p,ul,li {
         width: 100% !important;
     }
 
-
     .cont-card {
-
         max-width: 100%;
         width: 100%;
         height: auto;
@@ -551,33 +435,20 @@ p,ul,li {
     }
 
     .barra-quienes-somos {
-
         width: 45%;
         height: 5px;
         background-color: #ffc800;
         margin: auto;
-
     }
+
     .size-icon {
-
-    font-size: 5rem;
-    color: #154360
+        font-size: 5rem;
+        color: #154360;
+    }
 }
-}
-
 
 /* MD (768px - 991.98px): tablets verticales */
 @media (min-width: 768px) and (max-width: 991.98px) {
-    body::before {
-        content: "MD activo";
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: rgb(0, 13, 255);
-        color: white;
-        padding: 5px;
-        z-index: 9999;
-    }
 
     #navbarSupportedContent {
         background-color: rgb(27, 74, 131);
@@ -606,7 +477,6 @@ p,ul,li {
     .fondo-nav-menu {
         min-height: auto;
         padding-top: 100px;
-
     }
 
     .cont-w-100 {
@@ -614,16 +484,13 @@ p,ul,li {
     }
 
     .cont-card {
-
         max-width: 100%;
         width: 100%;
         height: auto;
         margin-bottom: 1rem;
     }
 
-
     .barra-quienes-somos {
-
         width: 40%;
         height: 5px;
         background-color: #ffc800;
@@ -631,38 +498,20 @@ p,ul,li {
     }
 
     .cont-texto-section3 {
-
         max-width: 100%;
         max-width: 100%;
         margin-left: 0 !important;
         padding: 1.5rem;
         text-align: center;
-
     }
-
-
-
 }
-
 
 /* LG (992px–1199.98px): tablets horizontales, mini laptops */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    body::before {
-        content: "portrait activo";
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: rgb(255, 255, 255);
-        color: rgb(0, 0, 0);
-        padding: 5px;
-        z-index: 9999;
-    }
 
     .navbar-toggler {
         margin: auto !important;
     }
-
-
 
     .cont-w-100 {
         width: 100% !important;
@@ -679,95 +528,66 @@ p,ul,li {
     }
 
     .navbar-ipad-pro {
-
         font-size: 1.1rem;
     }
 
     .logo-img {
         max-width: 150px;
-
     }
 
-
     .cont-card {
-
         max-width: 100%;
         width: 30%;
         height: auto;
     }
 
     .h-img {
-
         height: 33%;
     }
 
     .cont-pro {
-
         display: flex;
         gap: 2rem;
-
     }
 
     .img-seccion1 {
-
         max-width: 100%;
         width: 550px;
         padding: 2rem;
     }
 
     .img-section3 {
-
         max-width: 400px;
-
     }
 
     .barra-quienes-somos {
-
         width: 40%;
         height: 5px;
         background-color: #ffc800;
         margin-left: 10%;
-
-
     }
-
-
 }
 
+/* Resolución específica: 1366x768 */
 @media (min-width: 1366px) and (max-width: 1366px) {
 
-    body::before {
-        content: "portrait activo";
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: rgb(255, 225, 0);
-        color: rgb(0, 0, 0);
-        padding: 5px;
-        z-index: 9999;
-    }
-
     .img-seccion1 {
-
         max-width: 100%;
         width: 600px;
         padding: 2rem;
     }
 
     .h-img {
-
         height: 31%;
     }
 
     .barra-quienes-somos {
-
         width: 36%;
         height: 5px;
         background-color: #ffc800;
     }
 
     .barra-color-yellow {
-
         width: 50%;
         height: 5px;
         background-color: #ffc800;
@@ -777,7 +597,5 @@ p,ul,li {
         padding: 1rem;
         color: #154360;
         font-size: 1.8rem;
-
     }
-
 }
