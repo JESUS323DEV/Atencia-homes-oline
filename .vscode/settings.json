@@ -1,7 +1,20 @@
 {
-    "liveServer.settings.port": 5501,
-    "cSpell.words": [
-        "ATENCIA",
-        "intrusiva"
-    ]
+  "editor.wordWrap": "on", // globalmente activo si quieres
+  "[html]": {
+    "editor.wordWrap": "off" // pero desactivado solo en HTML
+  },
+  "cSpell.words": [
+    "Atencia",
+    "coliving",
+    "Coliving",
+    "reacondicionamiento",
+    "Reacondicionamos",
+    "Rentabilizar",
+    "Responsividad",
+    "revalorizarlas",
+    "subarrendarla",
+    "Submenú",
+    "tabulación",
+    "Yisus"
+  ]
 }
