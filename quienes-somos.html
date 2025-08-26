@@ -33,22 +33,20 @@
             <div class="container">
 
                 <!-- Logo accesible con aria-label y alt en la imagen -->
-                <div class="d-flex align-items-center justify-content-center gap-2 gap-lg-0">
-                    <a class="navbar-brand order-1" href="#quienes-somos-inicio" aria-label="Inicio Atencia Homes">
-                        <img class="img-fluid logo-principal mx-0 mx-lg-5 p-1"
+                    <a class="navbar-brand order-1 order-lg-0 " href="index.html" aria-label="Inicio Atencia Homes">
+                        <img class="img-fluid logo-principal mx-0 mx-lg-5 p-1 "
                             src="media/img/logo_sin_espacio_extra.png" alt="Logo Principal de Atencia Homes">
                     </a>
 
                     <!-- Botón hamburguesa con icono y accesibilidad -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Abrir o cerrar menú de navegación">
                         <span><i class="bi bi-list text-white fs-1"></i></span>
                     </button>
-                </div>
                 <!-- Contenido colapsable del menú -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto gap-1 gap-lg-5" role="menubar">
+                    <ul class="navbar-nav mx-auto gap-1 gap-lg-5 " role="menubar">
 
                         <!-- ========== DROPDOWN: SOLUCIONES ========== -->
                         <!-- Importante: usa <button> en lugar de <a> para ser accesible y funcional -->
@@ -66,6 +64,9 @@
                                         Funciona?</a></li>
                                 <li role="none"><a class="dropdown-item" href="index.html#propietarios"
                                         role="menuitem">Propietarios</a></li>
+                                <li role="none"><a class="dropdown-item" href="index.html#galeria-img" role="menuitem">Galería de
+                                        Imágenes</a>
+                                </li>
                             </ul>
                         </li>
 
@@ -82,9 +83,7 @@
                                         role="menuitem">Preguntas frecuentes</a>
                                 </li>
 
-                                <li role="none"><a class="dropdown-item" href="#galeria" role="menuitem">Galería de
-                                        Imágenes</a>
-                                </li>
+
 
                             </ul>
                         </li>
@@ -119,14 +118,8 @@
                         </a>
                     </div>
                 </div>
+            </nav>
 
-
-                <!-- ========== LINK QUIÉNES SOMOS-SOLO VISIBLE EN MÓVILES ========== -->
-                <div class="cont-link mx-4">
-                    <a class="nav-link text-white py-1 px-1" href="index.html">Inicio</a>
-                </div>
-            </div>
-        </nav>
 
         <!-- Separador visual bajo el header solo visible en pantallas grandes -->
         <div class="barra-header-azul d-none d-md-block my-2" aria-hidden="true"></div>
@@ -157,74 +150,6 @@
     </header>
     <!--AQUÍ TERMINA EL HEADER -->
 
-    <!--=====================MODAL-FIJO-PARA-IMÁGENES============================-->
-
-    <!-- botón fijo para galería de img-->
-
-
-    <button type="button" class="btn text-white cont-btn-modal position-fixed bottom-0 end-0 m-3" data-bs-toggle="modal"
-        data-bs-target="#fullscreenModal" style="z-index: 3000;">
-        Galería de Imágenes
-    </button>
-
-
-    <!--MODAL-IMÁGENES-FULLSCREEN -->
-
-    <div class="modal fade" id="fullscreenModal" tabindex="-1" aria-labelledby="fullscreenModal" aria-hidden="true">
-        <div class="modal-dialog cont-modal mx-auto ">
-            <div class="modal-content bg-dark">
-                <div class="modal-header border-1">
-                    <h5 class="mx-0 mx-lg-5 p-2 fs-3 text-white">Algunas de nuestras hermosas habitaciones</h5>
-
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                        aria-label="Cerrar"></button>
-                </div>
-
-                <div class="modal-body">
-                    <div class="container">
-                        <div class="row mt-4">
-
-                            <div class="col-12 col-lg-4 mb-3">
-                                <img class="img-fluid" src="media/img/habitacion1.jpeg" alt="Habitación 1">
-                            </div>
-
-                            <div class="col-12 col-lg-4 mb-3">
-                                <img class="img-fluid" src="media/img/habitacion2.jpeg" alt="Habitación 2">
-                            </div>
-
-                            <div class="col-12 col-lg-4 mb-3">
-                                <img class="img-fluid" src="media/img/habitacion3.jpeg" alt="Habitación 3">
-                            </div>
-
-                            <div class="col-12 col-lg-4 mb-3">
-                                <img class="img-fluid" src="media/img/habitacion4.jpeg" alt="Habitación 4">
-                            </div>
-
-                            <div class="col-12 col-lg-4 mb-3">
-                                <img class="img-fluid" src="media/img/habitacion5.jpeg" alt="Habitación 5">
-                            </div>
-
-                            <div class="col-12 col-lg-4 mb-3">
-                                <img class="img-fluid" src="media/img/habitacion6.jpeg" alt="Habitación 6">
-                            </div>
-
-                            <div class="col-12 col-lg-4 mb-3">
-                                <img class="img-fluid" src="media/img/habitacion7.jpeg.jpg" alt="Habitación 6">
-                            </div>
-
-                            <div class="col-12 col-lg-4 mb-3">
-                                <img class="img-fluid" src="media/img/habitacion8.jpeg.jpg" alt="Habitación 6">
-                            </div>
-
-                            <div class="col-12 col-lg-4 mb-3">
-                                <img class="img-fluid" src="media/img/habitacion9.jpeg.jpg" alt="Habitación 6">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!--=================================================-->
 
